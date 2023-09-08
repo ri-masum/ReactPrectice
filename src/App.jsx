@@ -5,6 +5,10 @@ import "./App.css";
 import Two from "./two";
 import Actors from "./Actors";
 import Singers from "./Singers";
+import Counter from "./Counter";
+import Users from "./Users";
+import UserDetails from "./UserDetails";
+
 
 function App() {
   const [count, setCount] = useState(0);
@@ -18,13 +22,41 @@ function App() {
 
 
   ]
+  
+  function ClickHandler(){
+    alert('wassap nigga')
+   
+  }
+  function addToFive(n){
+    alert (n+5)
+
+
+  }
 
   return (
+
     <>
-      <h1>Vite+React</h1>
-{
+    
+      <h1>React Core Concept </h1>
+      <Users></Users>
+
+
+      <Counter></Counter>
+      <button onClick={ClickHandler}>click me</button>
+      <button onClick={()=>{alert("hi everyone")}}>Inline button</button>
+      <button onClick={()=>addToFive(10)}>click me</button>
+    {/* module 39 prectice  */}
+
+
+
+
+
+
+
+
+{/* {
   singers.map(singer=><Singers singer={singer}></Singers>)
-}
+} */}
 
       {/* <Actors name='Masum Ahmed'></Actors>
       {
